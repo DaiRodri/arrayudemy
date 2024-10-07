@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numero = [1,2,3,4,5,6,7,8,9]
+        let numero2 = []
+
+       
+
+        for ( i = 0; i< numero.length; i++){
+
+            document.write(numero[i] + "<br>")
+
+            
+        }
+
+        for (i=0; i<numero.length;i++){
+            let numeros = numero[i] * 2
+            numero2.push(numeros)
+           
+
+        }
+        document.write("o tamanho do array é : "  +  numero2.length + "<br>")
+
+        for( i=0;i<numero2.length;i++){
+            document.write(numero2[i] + "<br>")
+        }
+      
+    
+    
+    </script>
+    
+</body>
+</html>

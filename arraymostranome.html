@@ -1,0 +1,32 @@
+<!--Precisamos ter uma espécie de lista de nomes e mostrar na tela todos os nomes e temabém inserir
+mais um nome digitado que o usuário digitou-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nomes = ["joão","maria","daiana","bibe","paulinho","otavio"]
+        let nomedigitado = prompt("entre com seu nome")
+
+        nomes [nomes.length] = nomedigitado
+
+        for (i=0; i < nomes.length; i++){
+         
+        document.write(nomes[i] +"<br>")
+       
+
+        }
+        document.write(" a lista possui: " + nomes.length + " elementos")
+
+     
+       
+       
+        
+    </script>
+    
+</body>
+</html>

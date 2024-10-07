@@ -1,0 +1,42 @@
+<meta charset="UTF-8" >
+<input type="text" id="numero" />
+<input type="submit" value="adicione o verifique na loteria" id="verificar" />
+
+<script>
+
+var numerosSorteados = [];
+var numerosDigitados = [];
+var contador = 0;
+
+for (var t = 0; numerosSorteados.length < 6; t++){        // gera o numero e guarda no array
+            var sorteiaNumero  = Math.round(( Math.random()* 60));
+            numerosSorteados.push(sorteiaNumero );
+    }
+
+var sorteio = function (){
+
+
+var numero = document.getElementById("numero").value; //verifica se o número foi digitado  duas vezes
+for (var i = 0; i < numerosDigitados.length; i++){
+        if(numerosDigitados[i] == numero){
+            alert("Você já digitou esse número");
+            return;
+        }
+    }
+if(contador  < 6){    //armazena o número digitado pelo usuário     
+        numerosDigitados.push(numero);
+        console.log(numerosDigitados);
+        contador = contador + 1;
+        return;
+}else {
+        alert ("Você já digitou seis números");
+    }    
+
+
+}
+
+
+var botao = document.getElementById("verificar");
+botao.onclick = sorteio;
+
+</script>

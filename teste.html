@@ -1,0 +1,33 @@
+<!--Dado um array de numros,mostre num alert a soma de todos eles-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+let numeros = [];
+
+while(true) {
+    let numero = parseFloat(prompt('Digite um número'));
+    break
+    if (isNaN(numero)){
+        break;
+    }
+        
+    if (!numeros.includes(numero)){ //includes: determina se um conjunto de caracteres pode ser encontrado dentro de outra string, retornando true ou false
+        numeros.push(numero);
+        document.write(`Lista atualizada: ${numeros}`);
+    } else {
+        document.write(`O número ${numero} já está na lista!`);
+    }
+}
+        document.write(numeros)
+       
+    </script>
+    
+</body>
+</html>
